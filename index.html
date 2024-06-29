@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/03673f4e3f.js" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+  <title>Treact Final</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <nav class="row nav__row">
+
+    <a class="nav__left" href="/">
+      <figure class="nav__logo--wrapper">
+        <img class="nav__logo" src="./assets/logo.svg" alt="">
+      </figure>
+      Treact
+    </a>
+    <ul class="nav__right">
+      <li class="nav__list">
+        <a class="nav__link" href="/">About</a>
+      </li>
+      <li class="nav__list">
+        <a class="nav__link" href="/">Blog</a>
+      </li>
+      <li class="nav__list">
+        <a class="nav__link" href="/">Pricing</a>
+      </li>
+      <li class="nav__list">
+        <a class="nav__link" href="/">Contact Us</a>
+      </li>
+      <li class="nav__list">
+        <a class="nav__link  nav__login" href="/">Login</a>
+      </li>
+      <li class="nav__list">
+        <a class="nav__link btn nav__signup" href="/">Sign Up</a>
+      </li>
+    </ul>
+    <button class="nav__menu--open" onclick="openMenu()">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="menu__backdrop">
+      <button class="nav__menu--close" onclick="closeMenu()">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="menu__links">
+        <li class="menu__list">
+          <a class="menu__link" onclick="closeMenu()" href="">About</a></li>
+        <li class="menu__list">
+          <a class="menu__link" onclick="closeMenu()" href="">Blog</a></li>
+        <li class="menu__list">
+          <a class="menu__link" onclick="closeMenu()" href="">Pricing</a></li>
+        <li class="menu__list">
+          <a class="menu__link" onclick="closeMenu()" href="">Contact Us</a></li>
+        <li class="menu__list">
+          <a class="menu__link" onclick="closeMenu()" href="">Login</a></li>
+        <li class="menu__list">
+          <a class="menu__link menu__signup" onclick="closeMenu()" href="">Sign Up</a></li>
+      </ul>
+    </div>
+
+  </nav>
+  <header>
+    <div class="container">
+      <div class="row header__row">
+        <div class="left__description center">
+          
+          <div class="header__description">
+            <h1 class="header__h1">Beautiful React Templates <span class="purple">for you.</span></h1>
+            <p class="header__para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
+            <div class="email__form">
+              <input class="email__input" type="text" placeholder="Your E-mail Address">
+              <button class="email__button btn">Get Started</button>
+            </div>
+            <div class="two_column__p--figure">
+              <p class="our_trusted_customers">OUR TRUSTED CUSTOMERS</p>
+              <figure class="header__img1--wrapper">
+                <img class="header__img1" src="./assets/header-img-1.png" alt="">
+              </figure>
+            </div>
+          </div>
+          <figure class="header__img2--wrapper">
+            <img class="header__img2" src="./assets/header-img-2.svg" alt="">
+          </figure>
+          
+        </div>
+      </div>
+    </div>
+    </header>
+</body>
+</html>
