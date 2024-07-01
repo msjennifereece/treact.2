@@ -508,7 +508,7 @@ QUALITY WORK
 */
 
 .quality_work--left {
-  gap: 100px;
+  gap: 50px;
 }
 
 .quality_work--h2 {
@@ -592,7 +592,7 @@ STEPS
 */
 
 .steps__right {
-  gap: 100px;
+  gap: 50px;
 }
 
 .steps__description {
@@ -650,6 +650,58 @@ STEPS
   margin-top: 12px;
 }
 
+@media (max-width: 1024px) {
+  .steps__right {
+    display: flex;
+    flex-direction: row;
+  }
+ 
+  .steps__h2 {
+    font-size: 36px;
+  }
+}
 
+@media (max-width: 760px) {
+  
+  .steps__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .steps__img1--wrapper {
+    width: 100%;
+    max-width: 448px;
+  }
+
+  .steps__description {
+    width: 100%;
+  }
+
+  .steps__h5,
+  .steps__h2,
+  .step__title,
+  .step__para {
+    text-align: center;
+  }
+
+  .step {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step__text--container {
+    width: 100%;
+    max-width: 448px;
+    margin-left: 0;
+    margin-top: 12px;
+  }
+
+}
 
 
