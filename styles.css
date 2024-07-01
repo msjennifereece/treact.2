@@ -575,4 +575,71 @@ QUALITY WORK
   }
 }
 
+/*
+
+STEPS
+
+*/
+
+.steps__right {
+  gap: 100px;
+}
+
+.steps__description {
+  width: 50%;
+  margin: 32px 0;
+}
+
+.steps__img1--wrapper {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps__img1 {
+  width: 100%;
+}
+
+.steps__h2 {
+  margin-top: 16px;
+}
+
+.steps {
+  margin-top: 32px;
+}
+
+.step {
+  display: flex;
+  margin-top: 32px;
+}
+
+.step__number {
+  color: #cbd5e0;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.step__text--container {
+  margin-left: 24px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.step__title {
+  color: #243e62;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.step__para {
+  color: #718096;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+
+
 
