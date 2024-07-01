@@ -555,15 +555,25 @@ QUALITY WORK
 }
 
 @media (max-width: 760px) {
+  .quality_work--row {
+    width: 100%;
+    max-width: 448px;
+    margin: 0 auto;
+  }
+  
   .quality_work--center {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .quality_work--h2,
   .quality_work--h5,
   .quality_work--para {
     text-align: center;
+  }
+
+  .quality_work--para {
+    font-size: 14px;
   }
 
   .quality_work--description {
