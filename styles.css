@@ -754,7 +754,7 @@ VALUES
 .i__wrapper {
   font-size: 20px;
   padding: 8px;
-  border-radius: 999px;
+  border-radius: 50%;
 }
 
 .affordable__i--wrapper {
@@ -964,6 +964,8 @@ PRICING
 .enterprise__button {
   font-size: 14px;
   padding: 16px 32px;
+  width: 100%;
+  max-width: 192px;
 }
 
 .personal__button {
@@ -974,9 +976,19 @@ PRICING
   color: #6415ff;
   background-color: #f7fafc;
 }
+.business__button:hover {
+  color: #6415ff;
+  background-color: #d7d9db;
+
+}
 
 .enterprise__button {
   background-image: linear-gradient(to right, rgb(245, 101, 101) , rgb(254 , 178 , 178))
+}
+
+.values__button:hover {
+  transform: scale(1.025);
+  box-shadow: 0 8px 16px rgb(0,0,0,0.16);
 }
 
 @media (max-width: 1024px) {
