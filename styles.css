@@ -1001,11 +1001,282 @@ PRICING
   .plan {
     width: 100%;
     max-width: 384px;
+    margin-right: 0;
   }
 }
 
 @media (max-width: 760px) {
   .pricing__para {
+    font-size: 14px;
+  }
+
+
+}
+
+/*
+
+TESTIMONIALS
+
+*/
+
+.testimonials__right {
+  gap: 50px;
+}
+
+.test__img1 {
+  width: 100%;
+}
+
+.test__img1--wrapper {
+  width: 50%;
+}
+
+.test__description {
+  width: 50%;
+}
+
+.test__h2 {
+  margin-top: 16px;
+}
+
+.test__para {
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.star__container {
+  color: rgb(243, 207, 4);
+  margin-top: 48px;
+}
+
+.customer__h3 {
+  color: #243e63;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.customer__para {
+  color: #4a5568;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.625;
+  margin: 16px 0 40px;
+}
+
+.customer__info--controls {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.customer__left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.customer__picture {
+  width: 100%;
+}
+.customer__picture--wrapper {
+  width: 80px;
+  height: 80px;
+}
+
+.customer__name {
+  color: #243e63;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.customer__founder {
+  color: #7c8ba1;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.customer__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow--button {
+  color: #6415ff;
+  font-size: 16px;
+  padding: 16px;
+  margin: 0 12px;
+  border: none;
+  border-radius: 50%;
+  background-color: #edf2f7;
+}
+.arrow--button:hover {
+  color: #854af9;
+  transform: scale(1.1);
+}
+
+.divider {
+  font-size: 24px;
+  opacity: 0.2;
+}
+
+@media (max-width: 1024px) {
+  .test__h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 760px) {
+  .testimonials__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .test__img1--wrapper {
+    width: 100%;
+    max-width: 448px;
+    margin: 0 auto;
+  }
+
+  .test__description {
+    width: 100%;
+    max-width: 448px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .customer__left,
+  .customer__info--controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .customer__left {
+    text-align: center;
+  }
+
+  .customer__right {
+    margin-top: 32px;
+  }
+}
+
+/*
+
+GET STARTED
+
+*/
+
+.get_started--box {
+  background-color: #6415ff;
+  height: 282px;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.get_started--container {
+  height: 90px;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+
+.get_started--h5 {
+  color: #f7fafc;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.get_started--left {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.get_started--right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+}
+
+.get_started--button,
+.contact_us--button {
+  font-size: 16px;
+  padding: 20px 40px;
+}
+
+.get_started--button {
+  background-color: #f65656;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
+  margin-right: 32px;
+}
+.get_started--button:hover {
+  background-color: #ff3a3a;
+}
+
+.contact_us--button {
+  border: 1px solid rgb(160 174 192);
+}
+.contact_us--button:hover {
+  background-color: rgb(238, 238, 238);
+  color:#6415ff;
+}
+
+@media (max-width: 1024px) {
+
+  .get_started--box {
+    height: 332px;
+  }
+  .get_started--container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .get_started--left,
+  .get_started--right {
+    text-align: center;
+    width: 100%;
+    max-width: 512px;
+  }
+
+  .get_started--right {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .get_started--right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .get_started--h5 {
+    font-size: 24px;
+  }
+
+  .get_started--button {
+    font-size: 14px;
+    margin: 24px 0 0 0;
+  }
+
+  .contact_us--button {
+    margin-top: 16px;
     font-size: 14px;
   }
 }
