@@ -271,7 +271,6 @@ width: 100%;
   border-radius:99px;
   padding: 20px 192px 20px 32px;
   background-color: white;
-  z-index: 10;
   position: absolute;
 }
 .email__button {
@@ -369,28 +368,32 @@ width: 100%;
 }
 
 @media (max-width: 640px) {
-  
+
+  .header__description {
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+  }
 
   .email__form {
+    position: static;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
   }
 
   .email__input {
     position: static;
     width: 100%;
-    max-width: 448px;
     margin-bottom: 8px;
+
   }
 
   .email__button {
     position: static;
     width: 100%;
-    max-width: 448px;
     font-size: 16px;
-    padding: 16px;
+    padding: 20px;
   }
 
   .our_trusted_customers {
@@ -495,11 +498,15 @@ FEATURES
 
   .service {
     display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
   }
 
   .features__i--container {
     max-width: 70px;
-    text-align: center;
   }
 
   .service__text--container {
@@ -756,7 +763,11 @@ VALUES
 }
 
 .i__wrapper {
-  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
   padding: 8px;
   border-radius: 50%;
 }
@@ -1221,6 +1232,7 @@ GET STARTED
 .contact_us--button {
   font-size: 16px;
   padding: 20px 40px;
+  transition: all 0.5s ease;
 }
 
 .get_started--button {
@@ -1229,7 +1241,8 @@ GET STARTED
   margin-right: 32px;
 }
 .get_started--button:hover {
-  background-color: #ff3a3a;
+  background-color: #f50505;
+  font-size: 17px;
 }
 
 .contact_us--button {
@@ -1238,6 +1251,7 @@ GET STARTED
 .contact_us--button:hover {
   background-color: rgb(238, 238, 238);
   color:#6415ff;
+  font-size: 17px;
 }
 
 @media (max-width: 1024px) {
@@ -1369,11 +1383,21 @@ footer {
 }
 
 .media {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 16px;
   padding: 8px;
   color: #1a202c;
   background-color: white;
   border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.media:hover {
+  opacity: 0.5;
 }
 
 .copyright {
@@ -1417,4 +1441,3 @@ footer {
   }
 
 }
- 
